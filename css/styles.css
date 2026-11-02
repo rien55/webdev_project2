@@ -1,0 +1,325 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #15111a;
+  color: #efe9ee;
+  font-family: 'Archivo', 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+p {
+  margin: 0 0 1.25rem 0;
+}
+
+a {
+  color: #ff8d9b;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #ffffff;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: square;
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #3a3144;
+  background-color: #100d14;
+  color: #a79cb0;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+/* Navigation */
+
+header {
+  overflow: hidden;
+  background-color: #1f1a26;
+  border-bottom: 3px solid #e01b3d;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+nav li {
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+nav a {
+  display: block;
+  padding: 1rem 1.75rem;
+  color: #a79cb0;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #e01b3d;
+  color: #ffffff;
+}
+
+
+/* HOME PAGE - index.html - fluid layout */
+
+/* Style 1: fluid content column, sized in % and rem. */
+.home main {
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2.5rem 0 3rem 0;
+}
+
+/* Style 2: page title in the heavy display face over a thick red rule. */
+.home h1 {
+  margin: 0 0 1.75rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 4px solid #e01b3d;
+  font-family: 'Archivo Black', 'Archivo', Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+/* Style 3: section headings marked with a red bar down the left edge. */
+.home h2 {
+  margin: 2.75rem 0 1rem 0;
+  padding-left: 0.9rem;
+  border-left: 5px solid #e01b3d;
+  font-family: 'Archivo Black', 'Archivo', Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+/* Style 4: key art framed and lifted off the page with a drop shadow. */
+.home .hero {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 1px solid #3a3144;
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.55);
+}
+
+/* Style 5: video player framed and aligned with the body copy. */
+.home video {
+  display: block;
+  width: 100%;
+  max-width: 44rem;
+  margin: 0 0 1.5rem 0;
+  border: 1px solid #3a3144;
+  background-color: #000000;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+/* Style 6: body copy held to a readable measure on wide screens. */
+.home main p {
+  max-width: 44rem;
+  color: #ded6dd;
+}
+
+
+/* RESUME PAGE - resume.html - fixed width layout */
+
+/* Style 1: fixed width document panel, 960px at every window size. */
+.resume main {
+  box-sizing: border-box;
+  width: 960px;
+  margin: 2.5rem auto 0 auto;
+  padding: 2.5rem 3rem 3rem 3rem;
+  background-color: #1f1a26;
+  border: 1px solid #3a3144;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+/* Style 2: portrait cropped to a circle inside a red ring. */
+.resume .portrait {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1.25rem auto;
+  border: 4px solid #e01b3d;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Style 3: name set large and centered in the display face. */
+.resume h1 {
+  margin: 0 0 0.75rem 0;
+  font-family: 'Archivo Black', 'Archivo', Arial, sans-serif;
+  font-size: 2.75rem;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  text-align: center;
+}
+
+/* Style 4: contact lines centered and held back under the name. */
+.resume .tagline {
+  margin: 0 0 0.35rem 0;
+  color: #a79cb0;
+  text-align: center;
+}
+
+/* Style 5: section headings underlined across the full column. */
+.resume h2 {
+  margin: 2.25rem 0 0.75rem 0;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #e01b3d;
+  font-family: 'Archivo Black', 'Archivo', Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+/* Style 6: dates and credentials set apart from the body text. */
+.resume .meta {
+  margin: 0 0 0.75rem 0;
+  color: #a79cb0;
+  font-size: 0.9375rem;
+  font-style: italic;
+}
+
+.resume h3 {
+  margin: 1.5rem 0 0.2rem 0;
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.resume ul {
+  margin: 0 0 1.25rem 0;
+  padding-left: 1.5rem;
+}
+
+.resume li {
+  margin-bottom: 0.4rem;
+}
+
+
+/* PERSONAL PAGE - page3.html - fluid layout */
+
+/* Style 1: fluid content column, narrower for a comfortable reading measure. */
+.personal main {
+  width: 92%;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2.5rem 0 3rem 0;
+}
+
+/* Style 2: page title in the display face with a red rule beneath. */
+.personal h1 {
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 4px solid #e01b3d;
+  font-family: 'Archivo Black', 'Archivo', Arial, sans-serif;
+  font-size: 2.75rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* Style 3: band photograph spanning the column under a red edge. */
+.personal .banner {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-top: 5px solid #e01b3d;
+}
+
+/* Style 4: studio logo kept small and centered between sections. */
+.personal .studio-logo {
+  display: block;
+  width: 40%;
+  max-width: 12rem;
+  margin: 2rem auto;
+}
+
+/* Style 5: embedded players scale with the column instead of a fixed box. */
+.personal iframe {
+  display: block;
+  width: 100%;
+  max-width: 35rem;
+  height: 19.6875rem;
+  margin: 1.5rem auto 1rem auto;
+  border: 1px solid #3a3144;
+}
+
+/* Style 6: each listen line boxed as a small call to action. */
+.personal .listen {
+  max-width: 35rem;
+  margin: 0 auto 2.5rem auto;
+  padding: 0.6rem 1rem;
+  background-color: #1f1a26;
+  border-left: 4px solid #e01b3d;
+  font-weight: 500;
+  text-align: center;
+}
+
+.personal h2 {
+  margin: 3rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e01b3d;
+  font-family: 'Archivo Black', 'Archivo', Arial, sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.25;
+}
+
+.personal li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* Only the two fluid pages reflow. The resume keeps its 960px column on
+  purpose, because it is the fixed width page. */
+
+@media screen and (max-width: 48rem) {
+  nav a {
+    padding: 0.75rem 1rem;
+  }
+
+  .home h1,
+  .personal h1 {
+    font-size: 2.25rem;
+  }
+
+  .home h2 {
+    font-size: 1.25rem;
+  }
+
+  .personal h2 {
+    font-size: 1.4rem;
+  }
+
+  .personal iframe {
+    height: 12rem;
+  }
+
+  .personal .studio-logo {
+    width: 55%;
+  }
+}
